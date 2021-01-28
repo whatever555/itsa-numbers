@@ -4,7 +4,7 @@ exports[`Homepage matches snapshot 1`] = `
 <DocumentFragment>
   <article>
     <header
-      class="sc-hKgILt dPKneK"
+      class="sc-hKgILt bMSCoc"
     >
       Please input two numbers to determine how many numbers between each is divisible by 3
     </header>
@@ -44,7 +44,7 @@ exports[`Homepage matches snapshot 1`] = `
         </div>
         <footer>
           <div
-            class="sc-eCssSg cpBEtW"
+            class="sc-eCssSg drrWpA"
             data-testid="result"
           >
             RESULT: 0
