@@ -145,6 +145,7 @@ const Label = styled.label`
 const PageHeader = styled.header`
   font-size: 20px;
   margin-bottom: 33px;
+  line-height: 32px;
 `;
 
 const Result = styled.div`
