@@ -1,13 +1,12 @@
 # Itsapark numbers 
 A simple app for displaying how many numbers between two selected numbers are divisable by three.  
 
+[Click here to view the live page](https://eddiemurphy.me/)
+
 Built with nextjs and react    
   
 ![image](https://user-images.githubusercontent.com/1413475/106102074-20705a00-613f-11eb-8b42-dc53b46757d5.png)
 
-
-
-[Click here to view the live page](https://eddiemurphy.me/)
 
 
 ## Getting started 
