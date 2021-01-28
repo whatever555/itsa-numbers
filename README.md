@@ -7,6 +7,9 @@ Built with nextjs and react
 
 
 
+[Click here to view the live page](https://eddiemurphy.me/)
+
+
 ## Getting started 
 ### Clone project:   
 ```bash
