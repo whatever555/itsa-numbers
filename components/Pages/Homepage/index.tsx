@@ -20,39 +20,6 @@ export const Homepage = (props: CalculatorProps) => (
   </article>
 );
 
-export const performCalculation = (
-  numA: number,
-  numB: number,
-  divisor: number
-): number => {
-  if (typeof numA === "undefined" || typeof numB === "undefined") return -1;
-  const max = Math.max(numA, numB);
-  const min = Math.min(numA, numB);
-
-  const isMaxDivisibleByDivisor = Boolean(max % divisor === 0);
-  const isMinDivisibleByDivisor = Boolean(min % divisor === 0);
-
-  const maxModDiff = isMaxDivisibleByDivisor
-    ? 0
-    : -(max > 0 ? max % divisor : divisor - (Math.abs(max) % divisor));
-
-  const minModDiff = isMinDivisibleByDivisor
-    ? 0
-    : min > 0
-    ? divisor - (min % divisor)
-    : Math.abs(min) % divisor;
-
-  const formattedMin = min + minModDiff;
-  const formattedMax = max + maxModDiff;
-
-  const diff = formattedMax - formattedMin;
-  let comp = 0;
-
-  if (formattedMin < 1 && formattedMax > -divisor) comp = divisor;
-
-  return (diff - comp) / 3 + 1;
-};
-
 export const Calculator = (props: CalculatorProps) => {
   const router = useRouter();
   const [numA, setNumA] = useState(props.numA || 0);
@@ -114,6 +81,39 @@ export const Calculator = (props: CalculatorProps) => {
   );
 };
 
+export const performCalculation = (
+  numA: number,
+  numB: number,
+  divisor: number
+): number => {
+  if (typeof numA === "undefined" || typeof numB === "undefined") return -1;
+  const max = Math.max(numA, numB);
+  const min = Math.min(numA, numB);
+
+  const isMaxDivisibleByDivisor = Boolean(max % divisor === 0);
+  const isMinDivisibleByDivisor = Boolean(min % divisor === 0);
+
+  const maxModDiff = isMaxDivisibleByDivisor
+    ? 0
+    : -(max > 0 ? max % divisor : divisor - (Math.abs(max) % divisor));
+
+  const minModDiff = isMinDivisibleByDivisor
+    ? 0
+    : min > 0
+    ? divisor - (min % divisor)
+    : Math.abs(min) % divisor;
+
+  const formattedMin = min + minModDiff;
+  const formattedMax = max + maxModDiff;
+
+  const diff = formattedMax - formattedMin;
+  let comp = 0;
+
+  if (formattedMin < 1 && formattedMax > -divisor) comp = divisor;
+
+  return (diff - comp) / 3 + 1;
+};
+
 const InputGroup = styled.div`
   display: flex;
   align-items: center;
@@ -125,6 +125,7 @@ const InputGroup = styled.div`
   }
   margin-bottom: 33px;
 `;
+
 const Input = styled.input`
   border-radius: 7px;
   padding: 12px 20px;
@@ -134,25 +135,26 @@ const Input = styled.input`
   width: 100%;
   margin-top: 10px;
 `;
+
 const Label = styled.label`
   flex-basis: 48%;
   margin-bottom: 20px;
   font-size: 22px;
 `;
+
 const PageHeader = styled.header`
   font-size: 20px;
   margin-bottom: 33px;
 `;
 
 const Result = styled.div`
+  font-size: 50px;
   color: #717172;
   font-weight: bold;
   word-wrap: break-word;
   max-width: 100%;
   border-bottom: 6px dotted rgba(70, 70, 70, 0.2);
   border-top: 6px dotted rgba(70, 70, 70, 0.2);
-
-  font-size: 50px;
   @media (min-width: 800px) {
     font-size: 90px;
   }
