@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage matches snapshot 1`] = `
+<DocumentFragment>
+  <article>
+    <header
+      class="sc-hKgILt dPKneK"
+    >
+      Please input two numbers to determine how many numbers between each is divisible by 3
+    </header>
+    <section>
+      <form>
+        <div
+          class="sc-bdfBwQ kedaRK"
+        >
+          <label
+            class="sc-dlfnbm kFPgZW"
+            for="numA"
+          >
+            Input A:
+            <input
+              class="sc-gsTCUz jdoKCV"
+              data-testid="numA"
+              name="numA"
+              placeholder="enter a number"
+              type="number"
+              value="0"
+            />
+          </label>
+          <label
+            class="sc-dlfnbm kFPgZW"
+            for="numB"
+          >
+            Input B:
+            <input
+              class="sc-gsTCUz jdoKCV"
+              data-testid="numB"
+              name="numB"
+              placeholder="enter a number"
+              type="number"
+              value="0"
+            />
+          </label>
+        </div>
+        <footer>
+          <div
+            class="sc-eCssSg cpBEtW"
+            data-testid="result"
+          >
+            RESULT: 0
+          </div>
+        </footer>
+      </form>
+    </section>
+    <section />
+  </article>
+</DocumentFragment>
+`;

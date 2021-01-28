@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="sc-bdfBwQ cLAMJD"
+  >
+    <h1
+      class="sc-gsTCUz dauMgy"
+    >
+      Itsapark
+    </h1>
+  </header>
+</DocumentFragment>
+`;

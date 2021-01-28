@@ -1,0 +1,17 @@
+{
+  "short_name": "Itsapark",
+  "name": "Itsapark code challenge",
+  "description": "Itsapark code challenge: Numbers",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#f5624e",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#f5624e"
+}
