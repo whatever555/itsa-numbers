@@ -21,6 +21,7 @@ const Wrapper = styled.div`
   align-items: stretch;
   min-height: 100vh;
   min-width: 100vw;
+  color: #515142;
   background-color: #f4f1ea;
   * {
     box-sizing: border-box; 
